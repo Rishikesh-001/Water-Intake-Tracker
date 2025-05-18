@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Water Intake Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💧 Water Intake Tracker</h1>
+    <p class="goal">Goal: <span id="goal">8</span> Glasses</p>
+
+    <!-- Water Cup -->
+    <div class="cup">
+      <div class="water" id="water"></div>
+    </div>
+
+    <p class="status">You've had <span id="count">0</span> glasses today</p>
+    <div class="buttons">
+      <button onclick="addGlass()">➕ 1 Glass</button>
+      <button onclick="resetGlasses()">🔄 Reset</button>
+    </div>
+  </div>
+
+  <!-- Sounds -->
+  <audio id="pourSound" src="pour.mp3" preload="auto"></audio>
+  <audio id="resetSound" src="reset.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

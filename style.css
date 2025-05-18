@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url(water\ bckground.jpg);
+  background-size: cover;
+  /* background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+
+.container {
+  margin: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 24px;
+  padding: 2rem;
+  text-align: center;
+  width: 340px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #67e8f9;
+  margin-bottom: 0.5rem;
+}
+
+.goal {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.cup {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border: 4px solid #67e8f9;
+  border-radius: 50% 50% 40% 40% / 60% 60% 40% 40%;
+  margin: 0 auto 1rem;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.water {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(to top, #22d3ee, #67e8f9);
+  transition: height 0.8s ease;
+  /* border-radius: 0 0 50% 50%; */
+  animation: wave 2s infinite ease-in-out;
+}
+
+@keyframes wave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+}
+
+.status {
+  margin-bottom: 1.5rem;
+}
+
+.buttons button {
+  background: #06b6d4;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.buttons button:hover {
+  background: #0891b2;
+  transform: scale(1.05);
+}
