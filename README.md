@@ -6,7 +6,7 @@ A simple and clean Water Intake Tracker web application built using **HTML**, **
 
 ## 🚀 Live Demo
 
-🔗 [Click here to view the deployed website]([https://your-deployment-link.com](https://rishikesh-001.github.io/Water-Intake-Tracker/))
+🔗 [Click here to view the deployed website](https://rishikesh-001.github.io/Water-Intake-Tracker/)
 
 ---
 
